@@ -6,7 +6,17 @@ MovieLand is a modern **Next.js** web application for browsing movies and TV sho
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### Home Page
+![Home Page](./screenshots/homepage.png)
+
+### Movie Hero Slider
+![Movie Hero Slider](./screenshots/movie-hero-slider.png)
+
+### TV Shows Section
+![TV Shows](./screenshots/tv-shows.png)
+
+### Movie Carousel
+![Movie Carousel](./screenshots/movie-carousel.png)
 
 
 ## Demo
