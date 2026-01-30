@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* =========================
+   CSS Reset & Base Styles
+   ========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--text-primary));
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =========================
+   Scrollbar
+   ========================= */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--border));
+  border-radius: 9999px;
+}
+
+/* =========================
+   Global Elements
+   ========================= */
+img {
+  user-select: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
