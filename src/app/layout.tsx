@@ -14,8 +14,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "TMDB Portfolio",
-    template: "%s • TMDB Portfolio",
+    default: "Movieland",
+    template: "%s • Movieland",
   },
   description: "A production-ready TMDB-powered frontend portfolio built with Next.js.",
   icons: {
