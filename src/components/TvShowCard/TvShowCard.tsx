@@ -60,7 +60,7 @@ export default function TvShowCard({ tv }: Props) {
     );
 
   return (
-    <section className="max-w-7xl mx-auto mb-6 ">
+    <section className="max-w-7xl mx-auto mb-6">
       <div
         className="relative rounded-2xl shadow-xl p-8 overflow-hidden"
         style={{
@@ -68,7 +68,7 @@ export default function TvShowCard({ tv }: Props) {
           color: theme.colors.textPrimary,
         }}
       >
-        {/* POSTER – TOP RIGHT */}
+        {/* POSTER */}
         <div className="relative mb-6 md:absolute md:top-8 md:right-8 md:mb-0 w-full max-w-[220px] mx-auto">
           <div className="relative w-full aspect-[2/3]">
             <Image
@@ -154,8 +154,8 @@ export default function TvShowCard({ tv }: Props) {
                           : PLACEHOLDER_IMG
                       }
                       alt={season.name}
-                      width={80}
-                      height={120}
+                      width={64}
+                      height={96}
                       className="rounded"
                     />
                     <div>
@@ -169,8 +169,6 @@ export default function TvShowCard({ tv }: Props) {
               </div>
             </section>
           )}
-
-          
         </div>
       </div>
 

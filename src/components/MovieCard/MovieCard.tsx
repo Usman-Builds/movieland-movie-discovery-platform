@@ -81,7 +81,7 @@ export default function MovieCard({ movie }: Props) {
           color: theme.colors.textPrimary,
         }}
       >
-        {/* POSTER – Responsive */}
+        {/* POSTER */}
         <div className="relative mb-6 md:absolute md:top-8 md:right-8 md:mb-0 w-full max-w-[220px] mx-auto">
           <div className="relative w-full aspect-[2/3]">
             <Image
@@ -98,7 +98,6 @@ export default function MovieCard({ movie }: Props) {
           </div>
         </div>
 
-        {/* CONTENT */}
         <div className="md:pr-[260px]">
           <h1 className="text-4xl font-bold mb-2">{movie.title}</h1>
 
@@ -121,7 +120,7 @@ export default function MovieCard({ movie }: Props) {
           </p>
 
           {/* GENRES */}
-          <div className="flex flex-wrap gap-2 mb-6  md:justify-start">
+          <div className="flex flex-wrap gap-2 mb-6">
             {movie.genres.map((genre) => (
               <span
                 key={genre.id}
@@ -137,7 +136,7 @@ export default function MovieCard({ movie }: Props) {
           </div>
 
           {/* INFO */}
-          <div className="flex flex-wrap gap-6 text-sm opacity-80 mb-10 justify-center md:justify-start">
+          <div className="flex flex-wrap gap-6 text-sm opacity-80 mb-10">
             <span>Release: {movie.release_date}</span>
             <span>Runtime: {movie.runtime} min</span>
             <span>
@@ -148,15 +147,15 @@ export default function MovieCard({ movie }: Props) {
           {/* CAST */}
           {movie.credits.cast.length > 0 && (
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold mb-8">Cast</h2>
+              <h2 className="text-2xl font-semibold mb-6">Cast</h2>
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                 {movie.credits.cast.slice(0, 10).map((cast) => (
                   <Link
                     key={cast.id}
                     href={`/people/${cast.id}`}
-                    className="w-24 text-center group"
+                    className="w-20 text-center group"
                   >
-                    <div className="relative w-24 h-24 rounded-full overflow-hidden mx-auto">
+                    <div className="relative w-20 h-20 rounded-full overflow-hidden mx-auto">
                       <Image
                         src={
                           cast.profile_path
@@ -168,8 +167,8 @@ export default function MovieCard({ movie }: Props) {
                         className="object-cover group-hover:scale-105 transition"
                       />
                     </div>
-                    <p className="mt-2 text-sm font-medium">{cast.name}</p>
-                    <p className="text-xs opacity-70">{cast.character}</p>
+                    <p className="mt-2 text-xs font-medium">{cast.name}</p>
+                    <p className="text-[11px] opacity-70">{cast.character}</p>
                   </Link>
                 ))}
               </div>
@@ -179,15 +178,15 @@ export default function MovieCard({ movie }: Props) {
           {/* CREW */}
           {uniqueCrew.length > 0 && (
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold mb-8">Crew</h2>
+              <h2 className="text-2xl font-semibold mb-6">Crew</h2>
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                 {uniqueCrew.slice(0, 10).map((crew, i) => (
                   <Link
                     key={`${crew.name}-${crew.job}-${i}`}
                     href={`/people/${crew.id}`}
-                    className="w-24 text-center group"
+                    className="w-20 text-center group"
                   >
-                    <div className="relative w-24 h-24 rounded-full overflow-hidden mx-auto">
+                    <div className="relative w-20 h-20 rounded-full overflow-hidden mx-auto">
                       <Image
                         src={
                           crew.profile_path
@@ -199,8 +198,8 @@ export default function MovieCard({ movie }: Props) {
                         className="object-cover group-hover:scale-105 transition"
                       />
                     </div>
-                    <p className="mt-2 text-sm font-medium">{crew.name}</p>
-                    <p className="text-xs opacity-70">{crew.job}</p>
+                    <p className="mt-2 text-xs font-medium">{crew.name}</p>
+                    <p className="text-[11px] opacity-70">{crew.job}</p>
                   </Link>
                 ))}
               </div>
