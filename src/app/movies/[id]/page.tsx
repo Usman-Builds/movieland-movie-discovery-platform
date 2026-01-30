@@ -33,7 +33,7 @@ export default async function MovieDetailPage({ params }: Props) {
   }
 
   return (
-    <div className="pt-16 px-4 md:px-8 lg:px-16 space-y-12">
+    <div className="mt-24 space-y-12 px-2">
       <MovieCard movie={movie} />
       <MovieCarousel title={"Similar Movies"} movies={similarMovies} />
     </div>

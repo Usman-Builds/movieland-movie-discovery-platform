@@ -60,7 +60,7 @@ export default function TvShowCard({ tv }: Props) {
     );
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-10">
+    <section className="max-w-7xl mx-auto mb-6 ">
       <div
         className="relative rounded-2xl shadow-xl p-8 overflow-hidden"
         style={{

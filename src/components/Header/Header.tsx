@@ -435,22 +435,33 @@ export default function Header() {
         })}
 
         {/* Mobile Search */}
-        <div className="relative m-4">
+        <form
+          className="relative m-4"
+          onSubmit={(e) => {
+            e.preventDefault();
+            handleSearch();
+          }}
+        >
           <FiSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-xl" />
           <input
             type="text"
             placeholder="Search movies, TV shows or people..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && handleSearch()}
-            className="pl-10 pr-4 py-1 rounded-lg border w-full focus:outline-none"
+            className="pl-10 pr-20 py-2 rounded-lg border w-full focus:outline-none"
             style={{
               borderColor: theme.colors.border,
               backgroundColor: theme.colors.surface,
               color: theme.colors.textPrimary,
             }}
           />
-        </div>
+          <button
+            type="submit"
+            className="absolute right-2 top-1/2 -translate-y-1/2 px-3 py-1 rounded bg-red-600 text-white"
+          >
+            Search
+          </button>
+        </form>
       </div>
     </header>
   );

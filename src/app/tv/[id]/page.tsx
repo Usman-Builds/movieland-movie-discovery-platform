@@ -32,7 +32,7 @@ export default async function TvDetailPage({ params }: Props) {
   }
 
   return (
-    <div className="pt-16">
+    <div className="mt-24 px-2">
       <TvShowCard tv={tv} />
       <TvCarousel title={"Similar Shows"} tvShows={similar}/>
     </div>

@@ -73,7 +73,7 @@ export default function MovieCard({ movie }: Props) {
   );
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-10">
+    <section className="max-w-7xl mx-auto">
       <div
         className="relative rounded-2xl shadow-xl p-8 overflow-hidden"
         style={{
