@@ -3,6 +3,14 @@
 
 Movieland is a modern, responsive web platform for discovering movies, TV shows, and actors. It aggregates data from TMDb API, providing users with rich information, trailers, cast & crew details, and search functionality.
 
+## Promotion Video
+
+[![Movieland – Movie Discovery Platform](https://img.youtube.com/vi/r1yz6-KHa-I/0.jpg)](https://youtu.be/r1yz6-KHa-I)
+
+## Demo
+
+https://movieland-gilt.vercel.app/
+
 ## Screenshots
 
 ### Home Page
@@ -17,10 +25,6 @@ Movieland is a modern, responsive web platform for discovering movies, TV shows,
 ### Movie Carousel
 ![Movie Carousel](./screenshots/movie-carousel.png)
 
-
-## Demo
-
-https://movieland-gilt.vercel.app/
 
 ## About Me
 Hello! I'm a Software Engineer who loves solving problems and building things that make a difference.
