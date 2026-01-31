@@ -1,8 +1,7 @@
 
 # MovieLand
 
-MovieLand is a modern **Next.js** web application for browsing movies and TV shows. Explore popular, top-rated, and upcoming content, watch trailers, and discover binge-worthy series all in one place.
-
+Movieland is a modern, responsive web platform for discovering movies, TV shows, and actors. It aggregates data from TMDb API, providing users with rich information, trailers, cast & crew details, and search functionality.
 
 ## Screenshots
 
