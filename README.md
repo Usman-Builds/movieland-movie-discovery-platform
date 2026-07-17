@@ -9,7 +9,7 @@ Movieland is a modern, responsive web platform for discovering movies, TV shows,
 
 ## Demo
 
-https://movieland-gilt.vercel.app/
+https://movieland-movie-discovery.netlify.app/
 
 ## Screenshots
 
